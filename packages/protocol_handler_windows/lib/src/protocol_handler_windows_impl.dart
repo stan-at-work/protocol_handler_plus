@@ -9,6 +9,10 @@ class ProtocolHandlerWindows extends MethodChannelProtocolHandler {
 
   ProtocolHandlerWindows() : _impl = ProtocolHandlerWindowsImpl();
 
+  static void registerWith() {
+    ProtocolHandlerPlatform.instance = ProtocolHandlerWindowsImpl();
+  }
+
   Future<void> register(String scheme, {String? friendlyAppName}) async {
     return await _impl.register(scheme);
   }
