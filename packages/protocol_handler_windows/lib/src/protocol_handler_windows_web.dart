@@ -1,7 +1,7 @@
 import 'package:protocol_handler_windows/src/protocol_handler_windows_base.dart';
 
-class ProtocolHandlerWindows extends ProtocolHandlerWindowsBase {
-  ProtocolHandlerWindows() : super();
+class ProtocolHandlerWindowsImpl extends ProtocolHandlerWindowsBase {
+  ProtocolHandlerWindowsImpl() : super();
 
   static void registerWith() {
     // Web implementation does nothing.
