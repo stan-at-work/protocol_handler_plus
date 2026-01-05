@@ -14,6 +14,9 @@ class ProtocolHandlerWindows extends MethodChannelProtocolHandler {
   }
 
   Future<void> register(String scheme, {String? friendlyAppName}) async {
-    return await _impl.register(scheme);
+    return await _impl.register(
+      scheme,
+      friendlyAppName: friendlyAppName,
+    );
   }
 }
