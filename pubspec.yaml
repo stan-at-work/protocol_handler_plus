@@ -1,9 +1,9 @@
-name: protocol_handler_workspace
-homepage: https://github.com/leanflutter/protocol_handler
+name: protocol_handler_plus
+homepage: https://github.com/stan-at-work/protocol_handler_plus
 publish_to: none
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.10.0 <4.0.0"
 
 dev_dependencies:
-  melos: ^3.1.0
+  melos: ^8.3.0

@@ -1,5 +1,5 @@
-name: protocol_handler_workspace
-repository: https://github.com/leanflutter/protocol_handler
+name: protocol_handler_plus
+repository: https://github.com/stan-at-work/protocol_handler_plus
 
 packages:
   - examples/**
