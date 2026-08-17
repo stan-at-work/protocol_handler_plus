@@ -1,10 +1,11 @@
 name: protocol_handler_plus_ios
 description: iOS implementation of the protocol_handler_plus plugin.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/stan-at-work/protocol_handler_plus/tree/main/packages/protocol_handler_plus_ios
 
 environment:
   sdk: ">=3.10.0 <4.0.0"
+  flutter: ">=3.16.0"
 
 # publish_to: none
 # dependency_overrides:
