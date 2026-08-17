@@ -1,0 +1,29 @@
+name: protocol_handler_plus_macos
+description: macOS implementation of the protocol_handler_plus plugin.
+version: 1.0.0
+repository: https://github.com/stan-at-work/protocol_handler_plus/tree/main/packages/protocol_handler_plus_macos
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+# publish_to: none
+# dependency_overrides:
+#   protocol_handler_plus_platform_interface:
+#     path: ../protocol_handler_plus_platform_interface
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  protocol_handler_plus_platform_interface: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+flutter:
+  plugin:
+    implements: protocol_handler_plus
+    platforms:
+      macos:
+        pluginClass: ProtocolHandlerPlusPlusMacosPlugin

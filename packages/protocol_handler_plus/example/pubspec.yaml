@@ -1,0 +1,25 @@
+name: protocol_handler_plus_example
+description: Demonstrates how to use the protocol_handler_plus plugin.
+publish_to: "none"
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+  
+dependencies:
+  flutter:
+    sdk: flutter
+
+  protocol_handler_plus:
+    path: ../
+
+  bot_toast: ^4.1.3
+  preference_list: ^0.0.1
+  uni_platform: ^0.1.3
+  window_manager: ^0.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
