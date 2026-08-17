@@ -11,6 +11,7 @@ platforms:
 
 environment:
   sdk: ">=3.10.0 <4.0.0"
+  flutter: ">=3.16.0"
 
 # publish_to: none
 # dependency_overrides:
