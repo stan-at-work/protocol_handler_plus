@@ -1,33 +1,3 @@
 ## 1.0.0
 
-* feat: Convert to federated plugin
-* fix: Fix iOS platform handler issue #7
-
-## 0.1.6
-
-* fix: macos 3.16 plugin register issue #13
-
-## 0.1.5
-
-* Make sure the web project build
-
-## 0.1.4
-
-* bump win32_registry to 1.0.2
-* Expose ProtocolHandlerPlusPlugin so it's possible to call 'handleEventURL' for multiple plugins #6
-
-## 0.1.3
-
-* [windows] fix startup crash when argc is 1 #4
-
-## 0.1.2
-
-* Support android & ios platform.
-
-## 0.1.1
-
-* [macos & windows] Implement `getInitialUrl` metnod.
-
-## 0.1.0
-
-* First release.
+* First release, that works with flutter 3.47.0 and is constrainted to: sdk: ">=3.10.0 <4.0.0"
