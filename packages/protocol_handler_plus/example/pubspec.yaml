@@ -1,6 +1,12 @@
 name: protocol_handler_plus_example
 description: Demonstrates how to use the protocol_handler_plus plugin.
+repository: https://github.com/stan-at-work/protocol_handler_plus
+issue_tracker: https://github.com/stan-at-work/protocol_handler_plus/issues
 publish_to: "none"
+topics: 
+  - deeplinking
+  - protocol
+  
 
 environment:
   sdk: ">=3.10.0 <4.0.0"
