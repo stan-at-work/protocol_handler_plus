@@ -1,3 +1,7 @@
+## 1.0.2+1
+
+* Update metadata in pubspec.yaml
+
 ## 1.0.2
 
 * Update version and metadata of the repository
