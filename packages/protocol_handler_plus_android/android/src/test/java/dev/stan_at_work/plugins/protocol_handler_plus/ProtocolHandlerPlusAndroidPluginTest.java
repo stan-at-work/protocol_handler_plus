@@ -8,7 +8,7 @@ import io.flutter.plugin.common.MethodChannel;
 import org.junit.Test;
 
 /**
- * This demonstrates a simple unit test of the Java portion of this plugin's implementation.
+ * Unit tests for the Java portion of this plugin's implementation.
  *
  * Once you have built the plugin's example app, you can run these tests from the command
  * line by running `./gradlew testDebugUnitTest` in the `example/android/` directory, or
@@ -17,13 +17,24 @@ import org.junit.Test;
 
 public class ProtocolHandlerPlusAndroidPluginTest {
   @Test
-  public void onMethodCall_getPlatformVersion_returnsExpectedValue() {
+  public void onMethodCall_getInitialUrl_returnsEmptyStringWithoutLaunchIntent() {
     ProtocolHandlerPlusAndroidPlugin plugin = new ProtocolHandlerPlusAndroidPlugin();
 
-    final MethodCall call = new MethodCall("getPlatformVersion", null);
+    final MethodCall call = new MethodCall("getInitialUrl", null);
     MethodChannel.Result mockResult = mock(MethodChannel.Result.class);
     plugin.onMethodCall(call, mockResult);
 
-    verify(mockResult).success("Android " + android.os.Build.VERSION.RELEASE);
+    verify(mockResult).success("");
+  }
+
+  @Test
+  public void onMethodCall_unknownMethod_returnsNotImplemented() {
+    ProtocolHandlerPlusAndroidPlugin plugin = new ProtocolHandlerPlusAndroidPlugin();
+
+    final MethodCall call = new MethodCall("unknownMethod", null);
+    MethodChannel.Result mockResult = mock(MethodChannel.Result.class);
+    plugin.onMethodCall(call, mockResult);
+
+    verify(mockResult).notImplemented();
   }
 }
