@@ -1,3 +1,7 @@
+## 2.0.2
+
+* Remove the commented-out local `dependency_overrides` from pubspec.yaml; local development overrides now live in the gitignored `pubspec_overrides.yaml`. No functional changes.
+
 ## 2.0.1
 
 * Republish alongside the `protocol_handler_plus_macos` build fix. No functional changes.

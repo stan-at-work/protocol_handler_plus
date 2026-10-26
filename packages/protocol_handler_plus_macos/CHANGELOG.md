@@ -1,3 +1,7 @@
+## 2.0.2
+
+* Remove the commented-out local `dependency_overrides` from pubspec.yaml; local development overrides now live in the gitignored `pubspec_overrides.yaml`. No functional changes.
+
 ## 2.0.1
 
 * Fix `pluginClass` in pubspec.yaml, which was set to `ProtocolHandlerPlusPlusMacosPlugin` instead of the actual Swift class `ProtocolHandlerPlusMacosPlugin`. The mismatch made `flutter build macos`/`flutter run -d macos` fail with `cannot find 'ProtocolHandlerPlusPlusMacosPlugin' in scope` in the generated plugin registrant.

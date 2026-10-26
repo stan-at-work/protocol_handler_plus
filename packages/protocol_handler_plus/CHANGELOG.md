@@ -1,3 +1,11 @@
+## 2.0.2
+
+* Bump `protocol_handler_plus_platform_interface`, `protocol_handler_plus_ios`, `protocol_handler_plus_macos` and `protocol_handler_plus_windows` to `^2.0.2`.
+* `protocol_handler_plus_android` stays at `^2.0.1`, so this release still works on Flutter 3.16+. On Flutter 3.35+ pub resolves `protocol_handler_plus_android` 2.1.0, which raises the Android `minSdk` from 19 to 24. pub does not check `minSdk`: an app with `minSdk` below 24 must raise it (`flutter.minSdkVersion` already is 24 on Flutter 3.35+) or pin `protocol_handler_plus_android: 2.0.1`.
+* Migrate the example app's Android build to the Kotlin DSL (`build.gradle.kts`, `settings.gradle.kts`), following the Flutter 3.47 app template.
+* Remove the hard-coded development team from the example's iOS project.
+* Remove the commented-out local `dependency_overrides` from pubspec.yaml; local development overrides now live in the gitignored `pubspec_overrides.yaml`.
+
 ## 2.0.1
 
 * Fix macOS build failure (`cannot find 'ProtocolHandlerPlusPlusMacosPlugin' in scope`) caused by a `pluginClass` typo in `protocol_handler_plus_macos`.

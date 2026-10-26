@@ -1,3 +1,7 @@
+## 2.0.2
+
+* Fix the `homepage` and `repository` links in pubspec.yaml, which pointed at `blob/main/...` instead of the package directory (`tree/main/...`). No functional changes.
+
 ## 2.0.1
 
 * Republish alongside the `protocol_handler_plus_macos` build fix. No functional changes.
